@@ -18,7 +18,8 @@
 
 // _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 // import React from "react";
-import ReactDOM from "react-dom";
+
+// const data = paintings[0];
 
 // const elem1 = React.createElement("span", { children: "Привет" });
 // const elem2 = React.createElement("span", { children: "мир" });
@@ -51,26 +52,50 @@ import ReactDOM from "react-dom";
 
 // ReactDOM.render(element, document.querySelector("#root"));
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-const data = {
-  id: "id-1",
-  url: "https://cdn.pixaby.com/photo/2017/07/31/22/05/feathers-2561511_1280.jpg",
-  title: "Feathers. Art abstract",
-  price: 500,
-  author: {
-    tag: "ractapopulous",
-    url: "https://pixabay.com/users/ractapopulous-24766/",
-  },
-  quantity: 10,
-};
-const painting = (
-  <div>
-    <img src={data.url} alt={data.title} width="480" />
-    <h2>{data.title}</h2>
-    <p>
-      Автор: <a href=""></a>
-    </p>
-    <p>Цена: кредиитов</p>
-    <p>Доступность: заканчивается или есть в ниличии</p>
-    <button type="button"></button>
-  </div>
+// const data = {
+//   id: "id-1",
+//   url: "https://cdn.pixabay.com/photo/2017/07/31/22/05/feathers-2561511_1280.jpg",
+//   title: "Feathers. Art abstract",
+//   price: 500,
+//   author: {
+//     tag: "ractapopulous",
+//     url: "https://pixabay.com/users/ractapopulous-24766/",
+//   },
+//   quantity: 10,
+// };
+//_-_-_-_-_-_-_---_-_-_-_-_-_-_-_--
+// const painting = (
+//   <div>
+//     <img src={data.url} alt={data.title} width="480" />
+//     <h2>{data.title}</h2>
+//     <p>
+//       Автор: <a href={data.author.url}>{data.author.tag}</a>
+//     </p>
+//     <p>Цена: {data.price} кредиитов</p>
+//     <p>Доступность: заканчивается или есть в ниличии</p>
+//     <button type="button"></button>
+//   </div>
+// );
+
+//  {
+//         "id": "id-1",
+//         "url": "https://cdn.pixabay.com/photo/2017/07/31/22/05/feathers-2561511_1280.jpg",
+//         "title": "Feathers. Art abstract",
+//         "price": 500,
+//         "author": {
+//             "tag": "ractapopulous",
+//             "url": "https://pixabay.com/users/ractapopulous-24766/"
+//         },
+//         "quantity": 10
+//     }
+//_-___----_____________-----------------_____________
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+ReactDOM.createRoot(document.querySelector("#root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
